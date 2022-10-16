@@ -1,0 +1,22 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    color: #292E49;
+}
+
+.fade-text {
+    width: 18rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    position: relative;
+}
+
+.fade-text::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 10rem;
+    background-image: linear-gradient(to right, transparent, white);
+    pointer-events: none;
+}
